@@ -1,0 +1,438 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --webkit-font-smothing:antialiased;
+}
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --primary: #d96846;
+    --dark:black;
+    --pure:white;
+    --ternary:#eeeeee;
+}
+/* Header section */
+.port{
+    color: white;
+    display: flex;
+    margin-right: 100%;
+    
+}
+header{
+    background-color:var(--dark);
+    clip-path:polygon(0 0,100% 0,100% 100%,70% 87%,0 100%)
+    
+}
+.container{
+    max-width:1152px;
+    padding: 20px 55px;
+    margin: 0 auto;
+}
+header nav  .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 3rem;
+    text-transform: uppercase;
+    transition: all.3s ease;
+}
+header nav  .left a:hover{
+    color: var(--primary);
+}
+.hero{
+    padding: 2rem 0;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    padding: 0.4rem 2rem;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: 2px solid transparent;
+    outline: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.btn-primary{
+    background-color: var(--primary);
+    color: var(--dark);
+
+}
+.btn-primary:hover{
+    background: transparent;
+    border-color: var(--primary);
+    color:var(--pure)
+}
+.right h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 2rem;
+    padding-top: 1.5rem;
+    color: #d96846;
+}
+.suryaimg{
+    height: 500px;
+    width: 500px;
+    padding:40px;
+    border-radius: 100px;
+    
+}
+.right{
+    color:var(--pure);
+    text-align: left;
+}
+.right h5{
+    font-size: 1.4rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.right h1{
+    font-size: 2rem;
+    font-weight: ;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+} 
+.right h1 span{
+    color: var(--primary);
+}
+.right p{
+    line-height: 1.9rem;
+    margin-bottom: 0.8rem;
+}
+.btn-secondary{
+    background: transparent;
+    color: var(--primary);
+    border-color: var(--primary);
+    padding: 13px 10px;
+
+}
+.btn-secondary:hover{
+    background: var(--primary);
+    color: var(--dark);
+}
+.flex-1{
+    flex:1;
+}
+.hero .right{
+    margin-top: -4rem;
+}
+/* Profile section */
+section{
+    padding: 4rem 0;
+    background-color:var(--ternary);
+}
+section img{
+    width: 500px;
+    height: 500px;
+    padding: 40px;
+    border-radius: 100px;
+}
+section h1{
+    margin-bottom: 1.6rem;
+    font-size: 2rem;
+    font-weight: 400;
+}
+section h1 span{
+    color: var(--primary);
+}
+section h3{
+    font-size: 1.7rem;
+    margin-bottom: 1rem;
+    font-weight: 400
+}
+section p{
+    font-family: sans-serif;
+    line-height: 1.9rem;
+}
+.social{
+    margin-top: 0.5rem;
+    padding: 10px;
+    font-size:2rem;
+    cursor: pointer;
+    
+
+}
+.fa-envelope-o{
+    margin-right:1rem;
+}
+.fa-phone{
+    margin-right: 1rem;
+    color: green;
+}
+.fa-facebook{
+    margin-right: 1rem;
+    color: blue;
+}
+/* skills */
+.inner{
+    padding-top: 20px;
+    background-color: #333;
+}
+.skill-header{
+    text-align: center;
+    color: var(--primary);
+    padding: 1rem;
+
+}
+/* .skill-header::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    height: 4px;
+    width: 100px;
+    background-color:var(--ternary);
+} */
+.skill-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    grid-gap: 1.2rem;
+    padding: 1rem 80px;
+    font-size: 1.2rem;
+}
+.skill-box{
+    padding: 1rem;
+    color:#ddd;
+    cursor: pointer;
+}
+.skill-title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+
+}
+/* .skill-title:hover{
+    content:"";
+   position: absolute;
+   bottom: 0;
+   right: 50%;
+   width: 35px;
+   height: 4px;
+   border-radius: 2px 0 0 2px;
+   background-color: #d96846;
+}
+.skill-title:before{
+    content:"";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 35px;
+    height: 4px;
+    border-radius: 0 2px 2px 0;
+    background-color: #fff;
+} */
+.skill-icon{
+    width: 50px;
+}
+.img{
+    width: 90px;
+    height: 90px;
+    border-radius: 45px;
+    background-color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .img:hover{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90px;
+    border-radius: 45px 0 0 45px;
+} */
+.skill-title h3{
+color: #fff;
+margin: 0.5rem;
+}
+.skill-icon{
+    width: 50px;
+    z-index: 2;
+}
+p{
+    font-size:1rem;
+    text-align: left;
+}
+/* Projects section */
+section.project{
+    background-color: var(--ternary);
+}
+.container h2{
+    text-align: center;
+    font-size: 2rem;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+    
+}
+h2 span{
+    color: var(--primary);
+}
+.para-project{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    padding-bottom: 3rem;
+}
+.card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+   
+}
+.card img{
+    height:100%;
+    width: 100%;
+    border-radius:0;
+    padding: 0;
+}
+.card{
+    position: relative;
+    height: 250px;
+
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(61, 207, 211,0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--pure);
+    opacity: 0;
+    transition: all .3s ease;
+}
+.card:hover .overlay{
+    opacity: 1;
+
+}
+.overlay span{
+    font-size: 1.3rem;
+    font-family:'Times New Roman', Times, serif;
+    
+}
+.overlay a{
+    text-decoration: none;
+    color: var(--dark);
+    font-size: 1.8rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Hire ME section */
+.contact{
+    background-color:#333;
+    color: white;
+}
+.contact .card-wrapper{
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: repeat(4,1fr);
+}
+.contact .card-wrapper .card img{
+    height: 100px;
+    width: 100px;
+    margin-top: 3rem;
+    border-radius: 10px;
+}
+.contact .card-wrapper .card{
+    text-align: center;
+}
+.contact .card-wrapper .card h2{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 2rem;
+}
+.contact .card-wrapper .card h4{
+    font-size: 0.9rem;
+    font-weight: 400px;
+    
+}
+.contact .card-wrapper .card a{
+    text-decoration: none;
+    color: white;
+}
+.para-project{
+    font-size: 0.5;
+}
+.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+
+}
+.contact .input-wrap-2 input{
+    margin-bottom: 2rem;
+    font-size: 0.9rem;
+
+}
+.contact .input-wrap-2 textarea{
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+.contact input:focus{
+    outline: none;
+}
+.contact textarea:focus{
+    outline: none;
+}
+.contact .input-wrap-2{
+    display: flex;
+    flex-direction: column;
+}
+.contact input{
+    padding: 0.5rem;
+}
+.contact .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: -2rem;
+}
+/* footer */
+footer{
+    background: var(--ternary);
+    text-align: center;
+    padding: 5rem;
+}
+.footer-logo p{
+margin-left: 43%;
+    font-size: 2rem;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 2rem;
+    
+
+}
+.footer-logo p span{
+    color: var(--primary);
+}
+.footer-logo{
+    margin-bottom: 3rem;
+}
+.footer-socials i{
+    margin-right: 2rem;
+    font-size: 2rem;
+    cursor: pointer;
+    
+}
+.footer-logo h5{
+    text-align: center;
+    font-size: 0.8rem;
+    margin-top: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: -1rem;
+}
